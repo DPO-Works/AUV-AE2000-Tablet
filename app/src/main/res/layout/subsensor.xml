@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".subsensor"
+    android:background="#ffd9dbff">
+    <!---
+    android:background="@drawable/top2" >
+    -->
+
+<!-- Sensor Settings -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Sensor Settings"
+        android:id="@+id/sensor_tvSettingTitle"
+        android:textSize="24dp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start Mag Task"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Mag Start"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/sensor_btMagStart"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Mag Stop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/sensor_btMagStop"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="260dp"
+        />
+
+<!-- TaskStatus -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mag Task Status"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/sensor_tvMagTaskStatus"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- TaskError -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mag Task Error"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textAllCaps="false"
+        android:textSize="14.0sp"
+        android:background="@drawable/button_r"
+        android:id="@+id/sensor_btMagTaskError"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- magX  -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="X[nT]"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text=""
+        android:id="@+id/sensor_tvMagX"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- MagY -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Y[nT]"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text=""
+        android:id="@+id/sensor_tvMagY"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- MagZ -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text="Z[nT]"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text=""
+        android:id="@+id/sensor_tvMagZ"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- MagTemp -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text="Temp[C]"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text=""
+        android:id="@+id/sensor_tvMagTemp"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- MiniCT -->
+<!--
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start MiniCT Task"
+        android:id="@+id/sensor_tvMicA"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="MiniCT Start"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/sensor_btMiniCTStart"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="MiniCT Stop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/sensor_btMiniCTStop"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="260dp"
+        />
+-->
+<!-- TaskStatus -->
+<!--
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MiniCT Task Status"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/sensor_tvMiniCTTaskStatus"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="240dp"
+        />
+-->
+<!-- TaskError -->
+<!--
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MiniCT Task Error"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:text="-"
+        android:textAllCaps="false"
+        android:textSize="14.0sp"
+        android:background="@drawable/button_r"
+        android:id="@+id/sensor_btMiniCTTaskError"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="240dp"
+        />
+-->
+<!-- Conductivity -->
+<!--
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Conductivity[mS/cm]"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/sensor_tvMiniCTCond"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="240dp"
+        />
+-->
+<!-- Temp -->
+<!--
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Temp[C]"
+			android:background="@drawable/border"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/sensor_tvMiniCTTemp"
+        android:layout_below="@+id/sensor_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="240dp"
+        />
+-->
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Ready Mark"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/sensor_btSensCheck"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+</RelativeLayout>

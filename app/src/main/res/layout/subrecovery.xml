@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".subrecovery"
+    android:background="#ffd9dbff">
+<!---
+    android:background="@drawable/top2" >
+-->
+<!-- Mission / Recovery -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Recovery"
+        android:id="@+id/recovery_tvSettingTitle"
+        android:textSize="24dp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+
+
+<!-- Lifting & Recovery Operation -->
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lifting and Recovery Operation"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+<!-- Mission Stop -->
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="NFLY Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvNFlyCkeck"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="220dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Mission Stop"
+        android:id="@+id/recovery_btMissionStop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="460dp"
+        />
+
+<!-- Act Off -->
+
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="Thruster/Wing Power"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="110dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvThrustPwrCkeck"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="220dp"
+        />
+    <TextView
+        android:layout_width="110dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvWingPwrCkeck"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="330dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Actuator Off"
+        android:id="@+id/recovery_btActOff"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="460dp"
+        />
+
+
+<!-- Payload Task Stop -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="PayloadTask Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvTaskPayload"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="220dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Payload Task OFF"
+        android:id="@+id/recovery_btPayloadStop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="460dp"
+        />
+
+<!-- Ballast -->
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="Dive Ballast"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvDiveBallast"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Dive Release"
+        android:id="@+id/recovery_btDiveRelease"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="460dp"
+        />
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="Surface Ballast"
+        android:id="@+id/recovery_tvDisp42"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvSurfaceBallast"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Surface Release"
+        android:id="@+id/recovery_btSurfaceRelease"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="460dp"
+        />
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="Adjustment Ballast"
+        android:id="@+id/recovery_tvDisp42A"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvAdjustRelease"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Adjustment Release"
+        android:id="@+id/recovery_btAdjustRelease"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="460dp"
+        />
+
+
+
+<!-- ErrorCheck Task Stop -->
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="ErrorTask Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvTaskErrorCkeck"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="220dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="ErrorCheckTask Stop"
+        android:id="@+id/recovery_btErrorCheckStop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="460dp"
+        />
+
+
+<!-- Micron Task Stop -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="DeltaTTask Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvTaskMicron"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="DeltaTTask Stop"
+        android:id="@+id/recovery_btMicronStop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="460dp"
+        />
+
+
+<!-- DVL Task Stop -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="DVLTask Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvTaskDVL"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="DVL Task Stop"
+        android:id="@+id/recovery_btDVLStop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="460dp"
+        />
+
+<!-- MAG Task Stop -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="MAG Task Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvTaskMag"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Mag Task Stop"
+        android:enabled="false"
+        android:id="@+id/recovery_btMagStop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="460dp"
+        />
+
+<!-- Acoustic Power -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text="Acoustic Power Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/recovery_tvAcoustic"
+        android:background="@drawable/border"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Acoustic Power Off"
+        android:id="@+id/recovery_btAcousticStop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/recovery_tvSettingTitle"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="460dp"
+        />
+
+
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="ALL Quit"
+        android:id="@+id/recovery_btAllQuitCheck"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="720dp"
+
+        />
+
+</RelativeLayout>

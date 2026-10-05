@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".subdive"
+    android:background="#ffd9dbff">
+<!---
+    android:background="@drawable/top2">
+-->
+
+<!-- Dive -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Dive Start"
+        android:id="@+id/dive_tvSettingTitle"
+        android:textSize="24dp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+
+<!-- Actuator Operate -->
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Actuator Order"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        />
+
+<!-- Act On/Off Status -->
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thrust Power"
+			android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/dive_tvThrustPwr"
+			android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"
+        />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wing Power"
+			android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/dive_tvWingPwr"
+			android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="170dp"
+        />
+
+
+<!-- Act On / off  -->
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="60dip"
+        android:text="Actuator ON"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/dive_btActOn"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="250dp"
+        />
+
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="60dip"
+        android:text="Actuator OFF"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/dive_btActOff"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="580dp"
+        />
+
+
+<!-- Mission Operate -->
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mission Order"
+        android:id="@+id/dive_tvDisp1"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!-- Mission Course Load -->
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center_vertical"
+        android:text="Mission Course No."
+        android:id="@+id/mission_tvMission1"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:text="01"
+        android:id="@+id/mission_btMissionSelect"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="240dp"
+        />
+
+    <!-- Mission Operate -->
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Reserve"
+        android:id="@+id/dive_btReseve"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Start"
+        android:id="@+id/dive_btStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="250dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Stop"
+        android:id="@+id/dive_Stop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="460dp"
+        />
+
+
+
+<!-- Lifting & Recovery Operation -->
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mission Status"
+        android:id="@+id/dive_tvDisp2"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="20dp"
+        />
+
+<!-- Task Status : Errorcheck -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mission Task Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/dive_tvDiveMissionStatus"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="220dp"
+        />
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mission Task Error"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="----"
+        android:gravity="center"
+        android:textSize="14.0sp"
+        android:background="@drawable/button_r"
+        android:id="@+id/dive_btMissionTaskErr"
+        android:textAllCaps="false"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="220dp"
+        />
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NFLY Status"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvNflyStatus"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="220dp"
+        />
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reserved Time"
+        android:id="@+id/dive_tvDisp32"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvReserveTime"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="220dp"
+        />
+
+
+<!-- WaterLeak Check -->
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Water Leak Check"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="20dp"
+        />
+
+<!-- WL GeoSworth -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL GeoSworth"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvWLGeoSworth"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="220dp"
+        />
+
+<!-- WL Acostic -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Acoustic"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvWLAcoustic"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="220dp"
+        />
+
+<!-- WL Quadrans -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Quadrans"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvWLQuadrans"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="220dp"
+        />
+
+
+
+<!-- WL Controller -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Controller"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="350dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvWLController"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="530dp"
+        />
+
+<!-- WL Battery -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Battery1"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="350dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvWLBattery1"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="530dp"
+        />
+
+<!-- WL Battery2 -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Battery2"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="350dp"
+        />
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/dive_tvWLBattery2"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="530dp"
+        />
+
+    <!-- Lifting & Recovery Operation -->
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Param Status"
+        android:id="@+id/dive_tvDisp3"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="460dp"
+        />
+
+    <!-- Task Status : Return Time -->
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Return Time"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="480dp"
+        />
+    <TextView
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/dive_tvReturnTime"
+        android:background="@drawable/border"
+        android:layout_below="@+id/dive_tvSettingTitle"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="660dp"
+        />
+
+
+</RelativeLayout>

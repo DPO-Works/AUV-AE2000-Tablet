@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".subballast"
+    android:background="#ffd9dbff">
+    <!---
+    android:background="@drawable/top2" >
+    -->
+
+<!-- Ballast Test -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Ballast Test"
+        android:id="@+id/blst_tvSettingTitle"
+        android:textSize="24dp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ballast Operation"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+
+<!-- Dive Ballast status -->
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dive Ballast"
+        android:id="@+id/blst_tvBallastA1"
+			android:background="@drawable/border"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/blst_tvDiveBallast"
+			android:background="@drawable/border"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- Dive Ballast Operate -->
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Dive Ballast Keep"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/blst_btDiveBallastKeep"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Dive Ballast Open"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/blst_btDiveBallastOpen"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="360dp"
+        />
+
+
+<!-- Surface Ballast status -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Surface Ballast"
+        android:id="@+id/blst_tvBallastA2"
+			android:background="@drawable/border"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/blst_tvSurfaceBallast"
+			android:background="@drawable/border"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- Surface Ballast Operate -->
+
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Surface Ballast Keep"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/blst_btSurfaceBallastKeep"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Surface Ballast Open"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/blst_btSurfaceBallastOpen"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="360dp"
+        />
+
+
+<!-- Adjyst Ballast status -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Adjust Ballast"
+        android:id="@+id/blst_tvBallastA3"
+			android:background="@drawable/border"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/blst_tvAdjustBallast"
+			android:background="@drawable/border"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- Adjust Ballast Operate -->
+
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Adjust Ballast Keep"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/blst_btAdjustBallastKeep"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Adjust Ballast Open"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/blst_btAdjustBallastOpen"
+        android:layout_below="@+id/blst_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="360dp"
+        />
+
+<!-- Check -->
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Ready Mark"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/blst_btBallastCheck"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+</RelativeLayout>

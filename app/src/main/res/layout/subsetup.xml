@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffd9dbff"
+ 	android:id="@+id/setup_frSetting"
+    tools:context=".subsetup">
+
+<!-- GPS Settings -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"   
+        android:text="GPS Settings"
+        android:id="@+id/setup_tvSettingTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Tablet Settings"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btTabletGpsSetting"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="GPS Start"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btGpsStart"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="240dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="GPS Stop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btGpsStop"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="460dp"
+        />
+
+<!-- Wifi Settings -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Wifi Settings"
+        android:id="@+id/setup_tvWifiSettingTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="0dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Tablet Settings"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btTabletWifiSetting"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Link Start"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btLinkStart"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="240dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Link Stop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btLinkStop"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="460dp"
+        />
+
+    <!-- My IP -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MyIP:"
+        android:id="@+id/setup_tvMyIP"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <!-- AUV IP -->
+    <TextView
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AUV IP Address / UDP port"
+        android:id="@+id/setup_tvAuvIp"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:id="@+id/setup_edAuvIp"
+        android:text="192.168.36.1"
+
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="300dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" / "
+        android:id="@+id/setup_tvAuvIpSeparator"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="550dp"
+        />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/setup_edAuvPort"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="570dp"
+        />
+
+    <!-- GPS IP -->
+    <TextView
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GPS Recv. IP Addr / UDP Port"
+        android:id="@+id/setup_tvGpsIp"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:id="@+id/setup_edGpsIp"
+        android:text="192.168.36.131"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="300dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" / "
+        android:id="@+id/setup_tvGpsIpSeparator"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="550dp"
+        />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/setup_edGpsPort"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="570dp"
+        android:text="10001"
+        />
+
+    <!-- Quadrans IP -->
+    <TextView
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quadrans. IP Addr"
+        android:id="@+id/setup_tvQuadIp"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:id="@+id/setup_edQuadIp"
+        android:text="192.168.36.131"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="300dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="100dip"
+        android:text="Save Settings"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btSaveSetting"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="670dp"
+        />
+
+<!-- Checklist Settings -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Checklist Settings"
+        android:id="@+id/setup_tvCheckListSettingTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="0dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="List Clear"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btClearList"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="20dp"
+        />
+
+<!-- Version info -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Infomation"
+        android:id="@+id/setup_tvInfomationTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="0dp"
+        />
+
+    <TextView
+        android:layout_width="800dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Version"
+        android:id="@+id/setup_tvVersion"
+        android:layout_below="@+id/setup_tvSettingTitle"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="40dp"
+        />
+
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="TEST DATA SET"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btTESTSET"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="OS Reboot"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btReboot"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="450dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="OS Shutdown"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:id="@+id/setup_btShutdown"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="670dp"
+        />
+
+
+</RelativeLayout>

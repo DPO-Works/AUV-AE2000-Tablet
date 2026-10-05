@@ -1,0 +1,80 @@
+
+- API 28 以降で推奨
+- gradle.properties に以下を追加：
+android.useAndroidX=true
+android.enableJetifier=true
+
+
+import android.app.Fragment を androidx.fragment.app.Fragment に置き換え
+
+getFragmentManager() は 非推奨 なので、代わりに getSupportFragmentManager() を使う。
+
+extend は Activity → FragmentActivity
+public class MyActivity extends FragmentActivity
+
+
+
+
+import FragmentManger の変更
+	import android.app.FragmentManager;
+	import android.app.FragmentTransaction;
+を
+	import androidx.fragment.app.FragmentManager 
+	import androidx.fragment.app.FragmentTransaction
+に替える
+
+
+
+
+FragmentTransactionを変更
+	FragmentTransaction transaction = getFragmentManager().beginTransaction();
+を
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+に替える
+
+
+public Fragment FSens = new FragmentSensor();
+を
+public FragmentSensor FSens = new FragmentSensor();
+のように各フラグメントについて変更
+
+各フラグメントの
+import android.app.Fragment;
+を
+import androidx.fragment.app.Fragment
+
+
+トーストが２行以上表示されない→AlertDialogを使うように変更する
+
+ClassCommon.java
+ ShowErrorDetailの戻りをStringにして、最後でa.cc.ToastOutLong(outs)　を呼ばずにreturn outs とする
+res/values/styles.xml に以下追加
+   <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+各エラー表示フラグメント
+末尾に以下追加
+    public void showDialog( String message ) {
+        new AlertDialog.Builder(requireContext())
+                .setMessage(message) // メッセージを設定
+                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss()) // OKボタンで閉じる
+                .show();
+    }
+ma.cc.showErrorDetailをしている部分を以下のように変更。
+showDialog( ma.cc.getErrorDetail( ma.ViecleData.ErrStr04, ma.ViecleData.ErrorID_04, ErrorCode ) );
+
+
+プログラム名関係
+app/src/main/res/values/strings.xml の<string name="app_name">　を変える
+app/build.gradle の versionName、　VersionCodeを変える
+
+アイコン関係
+app/src/res/mipmap-(解像度)それぞれにPNGファイルを置く
+app/src/AndroidManifest.xml
+
+<application
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    ... >
+のiconの方のic_launcherをPNGファイル名に替える：拡張子は要らない

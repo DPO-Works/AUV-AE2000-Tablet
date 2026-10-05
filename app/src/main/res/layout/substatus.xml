@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffd9dbff"
+	android:id="@+id/fragmentStatus"
+    tools:context=".substatus">
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="IO"
+        android:id="@+id/stat_tvIoTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+    <!-- IO/01 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mag Power"
+        android:id="@+id/stat_tvIO_01t"
+        android:layout_below="@+id/stat_tvIoTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_01"
+        android:layout_alignTop="@+id/stat_tvIO_01t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/02 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DiveBallast"
+        android:id="@+id/stat_tvIO_02t"
+        android:layout_below="@+id/stat_tvIO_01t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_02"
+        android:layout_alignTop="@+id/stat_tvIO_02t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/03 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SurfaceBallast"
+        android:id="@+id/stat_tvIO_03t"
+        android:layout_below="@+id/stat_tvIO_02t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_03"
+        android:layout_alignTop="@+id/stat_tvIO_03t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/04 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AdjustBallast"
+        android:id="@+id/stat_tvIO_04t"
+        android:layout_below="@+id/stat_tvIO_03t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_04"
+        android:layout_alignTop="@+id/stat_tvIO_04t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/05 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Acostic Power"
+        android:id="@+id/stat_tvIO_05t"
+        android:layout_below="@+id/stat_tvIO_04t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_05"
+        android:layout_alignTop="@+id/stat_tvIO_05t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/06 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ThrustPower"
+        android:id="@+id/stat_tvIO_06t"
+        android:layout_below="@+id/stat_tvIO_05t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_06"
+        android:layout_alignTop="@+id/stat_tvIO_06t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/07 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DVL Power"
+        android:id="@+id/stat_tvIO_07t"
+        android:layout_below="@+id/stat_tvIO_06t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_07"
+        android:layout_alignTop="@+id/stat_tvIO_07t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/08 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WING Power"
+        android:id="@+id/stat_tvIO_08t"
+        android:layout_below="@+id/stat_tvIO_07t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_08"
+        android:layout_alignTop="@+id/stat_tvIO_08t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/09 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LAN Power"
+        android:id="@+id/stat_tvIO_09t"
+        android:layout_below="@+id/stat_tvIO_08t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_09"
+        android:layout_alignTop="@+id/stat_tvIO_09t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/10 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DiveMode"
+        android:id="@+id/stat_tvIO_10t"
+        android:layout_below="@+id/stat_tvIO_09t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_10"
+        android:layout_alignTop="@+id/stat_tvIO_10t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/11 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL GeoSworth"
+        android:id="@+id/stat_tvIO_11t"
+        android:layout_below="@+id/stat_tvIO_10t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_11"
+        android:layout_alignTop="@+id/stat_tvIO_11t"
+        android:layout_marginLeft="180dp" />
+<!-- IO/12 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Acoustic"
+        android:id="@+id/stat_tvIO_12t"
+        android:layout_below="@+id/stat_tvIO_11t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_12"
+        android:layout_alignTop="@+id/stat_tvIO_12t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/13 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Quadrans"
+        android:id="@+id/stat_tvIO_13t"
+        android:layout_below="@+id/stat_tvIO_12t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_13"
+        android:layout_alignTop="@+id/stat_tvIO_13t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/14 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Control"
+        android:id="@+id/stat_tvIO_14t"
+        android:layout_below="@+id/stat_tvIO_13t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_14"
+        android:layout_alignTop="@+id/stat_tvIO_14t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/15 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Battery1"
+        android:id="@+id/stat_tvIO_15t"
+        android:layout_below="@+id/stat_tvIO_14t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_15"
+        android:layout_alignTop="@+id/stat_tvIO_15t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/16 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Battery2"
+        android:id="@+id/stat_tvIO_16t"
+        android:layout_below="@+id/stat_tvIO_15t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_16"
+        android:layout_alignTop="@+id/stat_tvIO_16t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/17 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL GeoSworth"
+        android:id="@+id/stat_tvIO_17t"
+        android:layout_below="@+id/stat_tvIO_16t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_17"
+        android:layout_alignTop="@+id/stat_tvIO_17t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/18 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AUX1"
+        android:id="@+id/stat_tvIO_18t"
+        android:layout_below="@+id/stat_tvIO_17t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_18"
+        android:layout_alignTop="@+id/stat_tvIO_18t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/19 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AUX2"
+        android:id="@+id/stat_tvIO_19t"
+        android:layout_below="@+id/stat_tvIO_18t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_19"
+        android:layout_alignTop="@+id/stat_tvIO_19t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/20 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AUX3"
+        android:id="@+id/stat_tvIO_20t"
+        android:layout_below="@+id/stat_tvIO_19t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_20"
+        android:layout_alignTop="@+id/stat_tvIO_20t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/21 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Batt[Current]"
+        android:id="@+id/stat_tvIO_21t"
+        android:layout_below="@+id/stat_tvIO_20t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_21"
+        android:layout_alignTop="@+id/stat_tvIO_21t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/22 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WING FB"
+        android:id="@+id/stat_tvIO_22t"
+        android:layout_below="@+id/stat_tvIO_21t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_22"
+        android:layout_alignTop="@+id/stat_tvIO_22t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/23 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Batt1 TEMP."
+        android:id="@+id/stat_tvIO_23t"
+        android:layout_below="@+id/stat_tvIO_22t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_23"
+        android:layout_alignTop="@+id/stat_tvIO_23t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/24 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Batt2 TEMP."
+        android:id="@+id/stat_tvIO_24t"
+        android:layout_below="@+id/stat_tvIO_23t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_24"
+        android:layout_alignTop="@+id/stat_tvIO_24t"
+        android:layout_marginLeft="180dp" />
+    <!-- IO/25 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Controller TEMP."
+        android:id="@+id/stat_tvIO_25t"
+        android:layout_below="@+id/stat_tvIO_24t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvIO_25"
+        android:layout_alignTop="@+id/stat_tvIO_25t"
+        android:layout_marginLeft="180dp" />
+
+<!-- センサ系 **************************************************************** -->
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sensor / Caluclated Value"
+        android:id="@+id/stat_tvSensTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_marginLeft="290dp" />
+    <!-- Sens/01 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="QUADRANS Roll[deg]"
+        android:id="@+id/stat_tvSens_01t"
+        android:layout_below="@+id/stat_tvIoTitle"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_01"
+        android:layout_alignTop="@+id/stat_tvSens_01t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/02 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="QUADRANS Pitch[deg]"
+        android:id="@+id/stat_tvSens_02t"
+        android:layout_below="@+id/stat_tvSens_01t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_02"
+        android:layout_alignTop="@+id/stat_tvSens_02t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/03 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="QUADRANS Yaw[deg]"
+        android:id="@+id/stat_tvSens_03t"
+        android:layout_below="@+id/stat_tvSens_02t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_03"
+        android:layout_alignTop="@+id/stat_tvSens_03t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/04 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WaterSurge[mm/s]"
+        android:id="@+id/stat_tvSens_04t"
+        android:layout_below="@+id/stat_tvSens_03t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_04"
+        android:layout_alignTop="@+id/stat_tvSens_04t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/05 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WaterSway[mm/s]"
+        android:id="@+id/stat_tvSens_05t"
+        android:layout_below="@+id/stat_tvSens_04t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_05"
+        android:layout_alignTop="@+id/stat_tvSens_05t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/06 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BottomSurge[mm/s]"
+        android:id="@+id/stat_tvSens_06t"
+        android:layout_below="@+id/stat_tvSens_05t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_06"
+        android:layout_alignTop="@+id/stat_tvSens_06t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/07 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BottomSway[mm/s]"
+        android:id="@+id/stat_tvSens_07t"
+        android:layout_below="@+id/stat_tvSens_06t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_07"
+        android:layout_alignTop="@+id/stat_tvSens_07t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/08 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WaterTrack[1:En]"
+        android:id="@+id/stat_tvSens_08t"
+        android:layout_below="@+id/stat_tvSens_07t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_08"
+        android:layout_alignTop="@+id/stat_tvSens_08t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/09 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BottomTrack[1:En]"
+        android:id="@+id/stat_tvSens_09t"
+        android:layout_below="@+id/stat_tvSens_08t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_09"
+        android:layout_alignTop="@+id/stat_tvSens_09t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/10 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Micron Distance[m]"
+        android:id="@+id/stat_tvSens_10t"
+        android:layout_below="@+id/stat_tvSens_09t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_10"
+        android:layout_alignTop="@+id/stat_tvSens_10t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/11 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Micron Angle[deg]"
+        android:id="@+id/stat_tvSens_11t"
+        android:layout_below="@+id/stat_tvSens_10t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_11"
+        android:layout_alignTop="@+id/stat_tvSens_11t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/12 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WING Order"
+        android:id="@+id/stat_tvSens_12t"
+        android:layout_below="@+id/stat_tvSens_11t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_12"
+        android:layout_alignTop="@+id/stat_tvSens_12t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/13 -->
+    <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="WING Order R"
+            android:id="@+id/stat_tvSens_13t"
+            android:layout_below="@+id/stat_tvSens_12t"
+            android:layout_marginLeft="290dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/stat_tvSens_13"
+            android:layout_alignTop="@+id/stat_tvSens_13t"
+            android:layout_marginLeft="490dp" />
+    -->
+    <!-- Sens/14 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thrust Order L"
+        android:id="@+id/stat_tvSens_14t"
+        android:layout_below="@+id/stat_tvSens_12t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_14"
+        android:layout_alignTop="@+id/stat_tvSens_14t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/15 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thrust Order R"
+        android:id="@+id/stat_tvSens_15t"
+        android:layout_below="@+id/stat_tvSens_14t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_15"
+        android:layout_alignTop="@+id/stat_tvSens_15t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/16 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Power[AH]"
+        android:id="@+id/stat_tvSens_16t"
+        android:layout_below="@+id/stat_tvSens_15t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_16"
+        android:layout_alignTop="@+id/stat_tvSens_16t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/17 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IntegratedPower[AH]"
+        android:id="@+id/stat_tvSens_17t"
+        android:layout_below="@+id/stat_tvSens_16t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_17"
+        android:layout_alignTop="@+id/stat_tvSens_17t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/18 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Latitude"
+        android:id="@+id/stat_tvSens_18t"
+        android:layout_below="@+id/stat_tvSens_17t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_18"
+        android:layout_alignTop="@+id/stat_tvSens_18t"
+        android:layout_marginLeft="440dp" />
+    <!-- Sens/19 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Longigute"
+        android:id="@+id/stat_tvSens_19t"
+        android:layout_below="@+id/stat_tvSens_18t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_19"
+        android:layout_alignTop="@+id/stat_tvSens_19t"
+        android:layout_marginLeft="440dp" />
+    <!-- Sens/20 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Depth[m]"
+        android:id="@+id/stat_tvSens_20t"
+        android:layout_below="@+id/stat_tvSens_19t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_20"
+        android:layout_alignTop="@+id/stat_tvSens_20t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/21 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Altitude[m]"
+        android:id="@+id/stat_tvSens_21t"
+        android:layout_below="@+id/stat_tvSens_20t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_21"
+        android:layout_alignTop="@+id/stat_tvSens_21t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/22 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CourseTime[s]"
+        android:id="@+id/stat_tvSens_22t"
+        android:layout_below="@+id/stat_tvSens_21t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_22"
+        android:layout_alignTop="@+id/stat_tvSens_22t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/23 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NFLY Order"
+        android:id="@+id/stat_tvSens_23t"
+        android:layout_below="@+id/stat_tvSens_22t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_23"
+        android:layout_alignTop="@+id/stat_tvSens_23t"
+        android:layout_marginLeft="490dp" />
+    <!-- Sens/24 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="P"
+        android:id="@+id/stat_tvSens_24t"
+        android:layout_below="@+id/stat_tvSens_23t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_24"
+        android:layout_alignTop="@+id/stat_tvSens_24t"
+        android:layout_marginLeft="300dp" />
+    <!-- Sens/25 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="OS Clock"
+        android:id="@+id/stat_tvSens_25t"
+        android:layout_below="@+id/stat_tvSens_24t"
+        android:layout_marginLeft="290dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvSens_25"
+        android:layout_alignTop="@+id/stat_tvSens_25t"
+        android:layout_marginLeft="400dp" />
+
+<!-- エラー系 **************************************************************** -->
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Error Check and Execute"
+        android:id="@+id/stat_tvErrTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_marginLeft="600dp" />
+    <!-- Err/01 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Error Bit"
+        android:id="@+id/stat_tvErr_01t"
+        android:layout_below="@+id/stat_tvErrTitle"
+        android:layout_marginLeft="600dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:text="----"
+        android:textSize="14.0sp"
+        android:id="@+id/stat_btErr_01"
+        android:layout_alignTop="@+id/stat_tvErr_01t"
+        android:gravity="center"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:layout_marginLeft="770dp" />
+
+    <!-- Err/02 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task in Error"
+        android:id="@+id/stat_tvErr_02t"
+        android:layout_below="@+id/stat_tvErr_01t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_02"
+        android:layout_alignTop="@+id/stat_tvErr_02t"
+        android:layout_alignBottom="@+id/stat_tvErr_02t"
+        android:gravity="center"
+        android:layout_marginLeft="770dp" />
+    <!-- Err/03 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Execution"
+        android:id="@+id/stat_tvErr_03t"
+        android:layout_below="@+id/stat_tvErr_02t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_03"
+        android:layout_alignTop="@+id/stat_tvErr_03t"
+        android:layout_alignBottom="@+id/stat_tvErr_03t"
+        android:gravity="center"
+        android:layout_marginLeft="770dp" />
+    <!-- Err/04 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Happen Time"
+        android:id="@+id/stat_tvErr_04t"
+        android:layout_below="@+id/stat_tvErr_03t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_04"
+        android:layout_alignTop="@+id/stat_tvErr_04t"
+        android:layout_alignBottom="@+id/stat_tvErr_04t"
+        android:gravity="center"
+        android:layout_marginLeft="770dp" />
+
+    <!-- Err/05 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task01"
+        android:id="@+id/stat_tvErr_05t"
+        android:layout_below="@+id/stat_tvErr_04t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_05A"
+        android:layout_alignTop="@+id/stat_tvErr_05t"
+        android:layout_alignBottom="@+id/stat_tvErr_05t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_05"
+        android:layout_alignTop="@+id/stat_tvErr_05t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/06 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task02"
+        android:id="@+id/stat_tvErr_06t"
+        android:layout_below="@+id/stat_tvErr_05t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_06A"
+        android:layout_alignTop="@+id/stat_tvErr_06t"
+        android:layout_alignBottom="@+id/stat_tvErr_06t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_06"
+        android:layout_alignTop="@+id/stat_tvErr_06t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/07 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task03"
+        android:id="@+id/stat_tvErr_07t"
+        android:layout_below="@+id/stat_tvErr_06t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_07A"
+        android:layout_alignTop="@+id/stat_tvErr_07t"
+        android:layout_alignBottom="@+id/stat_tvErr_07t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_07"
+        android:layout_alignTop="@+id/stat_tvErr_07t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/08 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task04"
+        android:id="@+id/stat_tvErr_08t"
+        android:layout_below="@+id/stat_tvErr_07t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_08A"
+        android:layout_alignTop="@+id/stat_tvErr_08t"
+        android:layout_alignBottom="@+id/stat_tvErr_08t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_08"
+        android:layout_alignTop="@+id/stat_tvErr_08t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/09 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task05"
+        android:id="@+id/stat_tvErr_09t"
+        android:layout_below="@+id/stat_tvErr_08t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_09A"
+        android:layout_alignTop="@+id/stat_tvErr_09t"
+        android:layout_alignBottom="@+id/stat_tvErr_09t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_09"
+        android:layout_alignTop="@+id/stat_tvErr_09t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/10 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task06"
+        android:id="@+id/stat_tvErr_10t"
+        android:layout_below="@+id/stat_tvErr_09t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_10A"
+        android:layout_alignTop="@+id/stat_tvErr_10t"
+        android:layout_alignBottom="@+id/stat_tvErr_10t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_10"
+        android:layout_alignTop="@+id/stat_tvErr_10t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/11 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task07"
+        android:id="@+id/stat_tvErr_11t"
+        android:layout_below="@+id/stat_tvErr_10t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_11A"
+        android:layout_alignTop="@+id/stat_tvErr_11t"
+        android:layout_alignBottom="@+id/stat_tvErr_11t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_11"
+        android:layout_alignTop="@+id/stat_tvErr_11t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/12 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task08"
+        android:id="@+id/stat_tvErr_12t"
+        android:layout_below="@+id/stat_tvErr_11t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_12A"
+        android:layout_alignTop="@+id/stat_tvErr_12t"
+        android:layout_alignBottom="@+id/stat_tvErr_12t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_12"
+        android:layout_alignTop="@+id/stat_tvErr_12t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/13 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task09"
+        android:id="@+id/stat_tvErr_13t"
+        android:layout_below="@+id/stat_tvErr_12t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_13A"
+        android:layout_alignTop="@+id/stat_tvErr_13t"
+        android:layout_alignBottom="@+id/stat_tvErr_13t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_13"
+        android:layout_alignTop="@+id/stat_tvErr_13t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/14 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task10"
+        android:id="@+id/stat_tvErr_14t"
+        android:layout_below="@+id/stat_tvErr_13t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_14A"
+        android:layout_alignTop="@+id/stat_tvErr_14t"
+        android:layout_alignBottom="@+id/stat_tvErr_14t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_14"
+        android:layout_alignTop="@+id/stat_tvErr_14t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/15 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task11"
+        android:id="@+id/stat_tvErr_15t"
+        android:layout_below="@+id/stat_tvErr_14t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_15A"
+        android:layout_alignTop="@+id/stat_tvErr_15t"
+        android:layout_alignBottom="@+id/stat_tvErr_15t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_15"
+        android:layout_alignTop="@+id/stat_tvErr_15t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/16 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task12"
+        android:id="@+id/stat_tvErr_16t"
+        android:layout_below="@+id/stat_tvErr_15t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_16A"
+        android:layout_alignTop="@+id/stat_tvErr_16t"
+        android:layout_alignBottom="@+id/stat_tvErr_16t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_16"
+        android:layout_alignTop="@+id/stat_tvErr_16t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/17 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task13"
+        android:id="@+id/stat_tvErr_17t"
+        android:layout_below="@+id/stat_tvErr_16t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_17A"
+        android:layout_alignTop="@+id/stat_tvErr_17t"
+        android:layout_alignBottom="@+id/stat_tvErr_17t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_17"
+        android:layout_alignTop="@+id/stat_tvErr_17t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/18 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task14"
+        android:id="@+id/stat_tvErr_18t"
+        android:layout_below="@+id/stat_tvErr_17t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_18A"
+        android:layout_alignTop="@+id/stat_tvErr_18t"
+        android:layout_alignBottom="@+id/stat_tvErr_18t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_18"
+        android:layout_alignTop="@+id/stat_tvErr_18t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+    <!-- Err/19 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task15"
+        android:id="@+id/stat_tvErr_19t"
+        android:layout_below="@+id/stat_tvErr_18t"
+        android:layout_marginLeft="600dp" />
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/stat_tvErr_19A"
+        android:layout_alignTop="@+id/stat_tvErr_19t"
+        android:layout_alignBottom="@+id/stat_tvErr_19t"
+        android:gravity="center"
+        android:layout_marginLeft="750dp" />
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="12.0sp"
+        android:id="@+id/stat_btErr_19"
+        android:layout_alignTop="@+id/stat_tvErr_19t"
+    android:includeFontPadding="false"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="840dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".subdvl"
+    android:background="#ffd9dbff">
+    <!---
+    android:background="@drawable/top2" >
+    -->
+
+    <!-- DVL Settings -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="DVL Settings / DeltaT Settings"
+        android:id="@+id/dvl_tvSettingTitle"
+        android:textSize="24dp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start DVL Task"
+        android:id="@+id/dvl_tvDvlA"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="DVL Start"
+        android:id="@+id/dvl_btDvlStart"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="DVL Stop"
+        android:id="@+id/dvl_btDvlStop"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="260dp"
+        />
+
+<!-- TaskStatus -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DVL Task Status"
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvDvlC"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvDvlTaskStatus"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- TaskError -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DVL Task Error"
+			android:background="@drawable/border"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="14.0sp"
+        android:background="@drawable/button_r"
+        android:id="@+id/dvl_btDvlTaskError"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="240dp"
+
+
+        />
+
+<!-- WL Surge -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Surge[mm/s]"
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvDvlD"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text=""
+        android:id="@+id/dvl_tvDvlWLSurge"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- WL Sway -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WL Sway[mm/s]"
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvDvlE"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text=""
+        android:id="@+id/dvl_tvDvlWLSway"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- WaterTrack -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text="Water Track[1:EN]"
+        android:id="@+id/dvl_tvDvlF"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+        android:text=""
+        android:id="@+id/dvl_tvDvlWTrack"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- DeltaT -->
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start DeltaT Task"
+        android:id="@+id/dvl_tvMicA"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Acositc Power ON"
+        android:id="@+id/dvl_btAcosticOn"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Acositc Power OFF"
+        android:id="@+id/dvl_btAcosticOff"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="260dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="DeltaT Start"
+        android:id="@+id/dvl_btDeltaTStart"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="480dp"
+        />
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="DeltaT Stop"
+        android:id="@+id/dvl_btDeltaTStop"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="700dp"
+        />
+
+<!-- Acostic power Status -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Acostic Power"
+        android:background="@drawable/border"
+        android:id="@+id/dvl_tvAcPwrC"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:background="@drawable/border"
+        android:id="@+id/dvl_tvAcPwrStatus"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- TaskStatus -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DeltaT Task Status"
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvMicC"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvDeltaTTaskStatus"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- TaskError -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DeltaT Task Error"
+			android:background="@drawable/border"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:text="----"
+        android:textSize="14.0sp"
+        android:background="@drawable/button_r"
+        android:id="@+id/dvl_btDeltaTTaskError"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:textAllCaps="false"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- DeltaT dist -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DeltaT 0deg Dist"
+		android:background="@drawable/border"
+        android:id="@+id/dvl_tvMicD"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvMicDist"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="240dp"
+        />
+
+<!-- Micorn angle -->
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DeltaT Fwd Dist"
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvMicE"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+			android:background="@drawable/border"
+        android:id="@+id/dvl_tvMicAngle"
+        android:layout_below="@+id/dvl_tvSettingTitle"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="240dp"
+        />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Ready Mark"
+        android:id="@+id/dvl_btDvlCheck"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+</RelativeLayout>

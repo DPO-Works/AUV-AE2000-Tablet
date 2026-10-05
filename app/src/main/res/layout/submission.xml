@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".submission"
+    android:background="#ffd9dbff">
+    <!---
+    android:background="@drawable/top2" >
+    -->
+
+<!-- Ballast Test -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="Position Update"
+        android:id="@+id/mission_tvSettingTitle"
+        android:textSize="24dp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+
+<!-- Pos Update -->
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Position Update"
+        android:id="@+id/mission_tvMission2"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        />
+
+<!-- Lat/Lon -->
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Latitude"
+        android:background="@drawable/border"
+        android:id="@+id/mission_tvAuvLatTitle"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="(NON)"
+        android:background="@drawable/border"
+        android:id="@+id/mission_tvAuvLat"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="190dp"
+        />
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Longitude"
+        android:background="@drawable/border"
+        android:id="@+id/mission_tvAuvLonTitle"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="(NON)"
+        android:background="@drawable/border"
+        android:id="@+id/mission_tvAuvLon"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="190dp"
+        />
+
+<!-- Edit Select -->
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Edit Position Set"
+        android:id="@+id/mission_btEditPos"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="GPS Position Set"
+        android:id="@+id/mission_btGpsPos"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="340dp"
+        />
+
+<!-- Lat/Lon -->
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Latitude"
+            android:background="@drawable/border"
+        android:id="@+id/mission_tvAuvLatEditTitle"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:id="@+id/mission_tvAuvLatEdit"
+        android:text="+35_00.0000"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Longitude"
+            android:background="@drawable/border"
+        android:id="@+id/mission_tvAuvLonEditTitle"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:id="@+id/mission_tvAuvLonEdit"
+        android:text="+135_00.0000"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="140dp"
+        />
+
+
+
+<!-- Gps Info -->
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GPS Qty/Sat/Dp"
+        android:id="@+id/mission_tvSndGpsQtyTitle"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="350dp"
+        />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/mission_tvSndGpsQty"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="500dp"
+        />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GPS Latitude"
+        android:id="@+id/mission_tvSndGpsLatTitle"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="350dp"
+        />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/mission_tvSndGpsLat"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="500dp"
+        />
+
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GPS Longitude"
+        android:id="@+id/mission_tvSndGpsLonTitle"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="350dp"
+        />
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/mission_tvSndGpsLon"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="500dp"
+        />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GPS LastRecieve"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="350dp"
+        />
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/mission_tvSndGpsRec"
+			android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="500dp"
+        />
+
+
+
+<!-- Depth Reset -->
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Depth Reset"
+        android:id="@+id/mission_tvDepthResetTitle"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Depth 0m Set"
+        android:id="@+id/mission_btDepth0Set"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Depth 0.3m Set"
+        android:id="@+id/mission_btDepth03Set"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="340dp"
+        />
+
+    <TextView
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Depth[m]"
+        android:id="@+id/mission_tvDepthTitle"
+            android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0.0"
+        android:id="@+id/mission_tvDepth"
+            android:background="@drawable/border"
+        android:layout_below="@+id/mission_tvSettingTitle"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="220dp"
+        />
+    <!--
+    -->
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Ready Mark"
+        android:id="@+id/mission_btMissionCheck"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+</RelativeLayout>

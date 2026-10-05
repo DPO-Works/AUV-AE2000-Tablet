@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffd9dbff"
+    tools:context=".subcmnd">
+
+    <TextView
+        android:layout_width="320dip"
+        android:layout_height="30dip"
+        android:text="Task / IO Operation"
+        android:id="@+id/tvTaskTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+<!-- TASK / 01 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="DVL ON"
+        android:id="@+id/btTaskOn_01"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvTaskTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="DVL OFF"
+        android:id="@+id/btTaskOff_01"
+        android:layout_alignTop="@+id/btTaskOn_01"
+        android:layout_toEndOf="@+id/btTaskOn_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/btTaskOn_01" />
+    <!-- TASK / 02 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Acoustic ON"
+        android:id="@+id/btTaskOn_02"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_01"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Acoustic OFF"
+        android:id="@+id/btTaskOff_02"
+        android:layout_alignTop="@+id/btTaskOn_02"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_02"
+        android:layout_alignBottom="@+id/btTaskOn_02" />
+    <!-- TASK / 03 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="DeltaT ON"
+        android:id="@+id/btTaskOn_03"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_02"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="DeltaT OFF"
+        android:id="@+id/btTaskOff_03"
+        android:layout_alignTop="@+id/btTaskOn_03"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_03"
+        android:layout_alignBottom="@+id/btTaskOn_03" />
+    <!-- TASK / 04 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="ErrorCheck ON"
+        android:id="@+id/btTaskOn_04"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_03"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="ErrorCheck OFF"
+        android:id="@+id/btTaskOff_04"
+        android:layout_alignTop="@+id/btTaskOn_04"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_04"
+        android:layout_alignBottom="@+id/btTaskOn_04" />
+    <!-- TASK / 05a -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Mag ON"
+        android:enabled="false"
+        android:id="@+id/btTaskOn_05A"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_04"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Mag OFF"
+        android:enabled="false"
+        android:id="@+id/btTaskOff_05A"
+        android:layout_alignTop="@+id/btTaskOn_05A"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_05A"
+        android:layout_alignBottom="@+id/btTaskOn_05A" />
+    <!-- TASK / 05b -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Actuator ON"
+        android:id="@+id/btTaskOn_05B"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_05A"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Actuator OFF"
+        android:id="@+id/btTaskOff_05B"
+        android:layout_alignTop="@+id/btTaskOn_05B"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_05B"
+        android:layout_alignBottom="@+id/btTaskOn_05B" />
+    <!-- TASK / 06 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="DIVE Keep"
+        android:id="@+id/btTaskOn_06"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_05B"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="DIVE Open"
+        android:id="@+id/btTaskOff_06"
+        android:layout_alignTop="@+id/btTaskOn_06"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_06"
+        android:layout_alignBottom="@+id/btTaskOn_06" />
+    <!-- TASK / 07 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Surface Keep"
+        android:id="@+id/btTaskOn_07"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_06"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Surface Open"
+        android:id="@+id/btTaskOff_07"
+        android:layout_alignTop="@+id/btTaskOn_07"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_07"
+        android:layout_alignBottom="@+id/btTaskOn_07" />
+    <!-- TASK / 08 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Adjust Keep"
+        android:id="@+id/btTaskOn_08"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_07"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Adjust Open"
+        android:id="@+id/btTaskOff_08"
+        android:layout_alignTop="@+id/btTaskOn_08"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btTaskOn_08"
+        android:layout_alignBottom="@+id/btTaskOn_08" />
+    <!-- TASK / 09 -->
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="50dip"
+        android:text="Depth Reset"
+        android:id="@+id/btTaskOn_09"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_08"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+    <!-- TASK / 10 -->
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="50dip"
+        android:text="GPS Pos.Set"
+        android:id="@+id/btTaskOn_10"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btTaskOn_09"
+        android:layout_alignStart="@+id/tvTaskTitle" />
+
+<!-- NewFly -->
+
+    <TextView
+        android:layout_width="450dip"
+        android:layout_height="30dip"
+        android:text="NewFly"
+        android:id="@+id/tvNflyTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_marginLeft="400dp" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Select Course No"
+        android:id="@+id/btSelectCourseNo"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvNflyTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/tvNflyTitle"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:text="01"
+        android:id="@+id/NflyCourseNo"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/btSelectCourseNo"
+        android:layout_toEndOf="@+id/btSelectCourseNo"
+        android:layout_alignBottom="@+id/btSelectCourseNo"
+        android:layout_marginLeft="20dp" />
+<!--
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Load Course"
+        android:id="@+id/btNFly_04"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@+id/btSelectCourseNo"
+        android:layout_toEndOf="@+id/NflyCourseNo"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/btSelectCourseNo"
+        android:layout_marginLeft="0dp" />
+-->
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="Reservation"
+        android:id="@+id/btNFly_01"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/btSelectCourseNo"
+        android:layout_alignStart="@+id/tvNflyTitle" />
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="Start"
+        android:id="@+id/btNFly_02"
+        android:layout_alignTop="@+id/btNFly_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btNFly_01"
+        android:layout_alignBottom="@+id/btNFly_01" />
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="Quit"
+        android:id="@+id/btNFly_03"
+        android:layout_alignTop="@+id/btNFly_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btNFly_02"
+        android:layout_alignBottom="@+id/btNFly_01" />
+
+    <!-- Thruster -->
+    <TextView
+        android:layout_width="450dip"
+        android:layout_height="30dip"
+        android:text="For Actuator Test"
+        android:id="@+id/tvThrusterTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_below="@+id/btNFly_01"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="400dp" />
+    <!-- Thruster01 -->
+    <TextView
+        android:layout_width="60dip"
+        android:layout_height="50dip"
+        android:text="Left Th"
+        android:gravity="center"
+        android:id="@+id/tvThTitle_01"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvThrusterTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="400dp" />
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="+10%"
+        android:id="@+id/btThP_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/tvThTitle_01"
+        android:layout_toEndOf="@+id/tvThTitle_01"/>
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="-10%"
+        android:id="@+id/btThN_01"
+        android:layout_alignTop="@+id/btThP_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btThP_01"
+        android:layout_alignBottom="@+id/btThP_01" />
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="Stop"
+        android:id="@+id/btThS_01"
+        android:layout_alignTop="@+id/btThN_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btThN_01"
+        android:layout_alignBottom="@+id/btThN_01" />
+
+    <!-- Thruster02 -->
+    <TextView
+        android:layout_width="60dip"
+        android:layout_height="50dip"
+        android:text="Right Th"
+        android:gravity="center"
+        android:id="@+id/tvThTitle_02"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvThTitle_01"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="400dp" />
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="+10%"
+        android:id="@+id/btThP_02"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/tvThTitle_02"
+        android:layout_toEndOf="@+id/tvThTitle_02"/>
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="-10%"
+        android:id="@+id/btThN_02"
+        android:layout_alignTop="@+id/btThP_02"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btThP_02"
+        android:layout_alignBottom="@+id/btThP_02" />
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="Stop"
+        android:id="@+id/btThS_02"
+        android:layout_alignTop="@+id/btThN_02"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btThN_02"
+        android:layout_alignBottom="@+id/btThN_02" />
+
+    <!-- Thruster03 -->
+    <TextView
+        android:layout_width="60dip"
+        android:layout_height="50dip"
+        android:text="WING"
+        android:gravity="center"
+        android:id="@+id/tvThTitle_03"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvThTitle_02"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="400dp" />
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="+20deg"
+        android:id="@+id/btThP_03"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/tvThTitle_03"
+        android:layout_toEndOf="@+id/tvThTitle_03"/>
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="-20deg"
+        android:id="@+id/btThN_03"
+        android:layout_alignTop="@+id/btThP_03"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btThP_03"
+        android:layout_alignBottom="@+id/btThP_03" />
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:text="Center"
+        android:id="@+id/btThS_03"
+        android:layout_alignTop="@+id/btThN_03"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/btThN_03"
+        android:layout_alignBottom="@+id/btThN_03" />
+
+
+    <!-- Payload -->
+    <TextView
+        android:layout_width="450dip"
+        android:layout_height="30dip"
+        android:text="Payload Operation"
+        android:id="@+id/tvPldTitle"
+        android:textSize="24sp"
+        android:background="#99fff957"
+        android:layout_below="@+id/tvThTitle_03"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="400dp" />
+
+    <!-- Payload / 01 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Power/Task ON"
+        android:id="@+id/btPldOn_01"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvPldTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/tvPldTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Power/Task OFF"
+        android:id="@+id/btPldOff_01"
+        android:layout_alignTop="@+id/btPldOn_01"
+        android:layout_toEndOf="@+id/btPldOn_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/btPldOn_01" />
+    <!-- Payload / 02 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Recording ON"
+        android:id="@+id/btPldOn_02"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btPldOn_01"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/tvPldTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Recording OFF"
+        android:id="@+id/btPldOff_02"
+        android:layout_alignTop="@+id/btPldOn_02"
+        android:layout_toEndOf="@+id/btPldOn_02"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/btPldOn_02" />
+    <!-- Payload / 03 -->
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Calibration ON"
+        android:id="@+id/btPldOn_03"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btPldOn_02"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/tvPldTitle" />
+    <Button
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:text="Calibration OFF"
+        android:id="@+id/btPldOff_03"
+        android:layout_alignTop="@+id/btPldOn_03"
+        android:layout_toEndOf="@+id/btPldOn_03"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/btPldOn_03" />
+
+</RelativeLayout>

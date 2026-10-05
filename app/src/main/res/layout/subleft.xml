@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".subleft">
+
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text="Battery[V]"
+        	android:layout_marginTop="0dp"
+        	android:layout_marginLeft="0dp"
+        />
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text=""
+            android:id="@+id/tvBattVolt"
+        	android:layout_marginTop="0dp"
+        	android:layout_marginLeft="160dp"
+        />
+
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text="Current[A]"
+        	android:layout_marginTop="25dp"
+        	android:layout_marginLeft="0dp"
+        />
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text=""
+            android:id="@+id/tvPowerTemp"
+        	android:layout_marginTop="25dp"
+        	android:layout_marginLeft="160dp"
+        />
+
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text="CTLR Temp[deg]"
+        	android:layout_marginTop="50dp"
+        	android:layout_marginLeft="0dp"
+        />
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text=""
+            android:id="@+id/tvControllerTemp"
+        	android:layout_marginTop="50dp"
+        	android:layout_marginLeft="160dp"
+        />
+
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text="Batt. Temp[deg]"
+        	android:layout_marginTop="75dp"
+        	android:layout_marginLeft="0dp"
+        />
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+            android:text=""
+            android:id="@+id/tvBattTemp"
+        	android:layout_marginTop="75dp"
+        	android:layout_marginLeft="160dp"
+        />
+
+<!-- Page List -->
+
+    <Button
+        android:id="@+id/btPage01"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvBattTemp"
+        android:layout_marginTop="0dp"
+        android:text="Quadrans"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage01"
+        	android:layout_alignTop="@+id/btPage01"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage02"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage01"
+        android:layout_marginTop="0dp"
+        android:text="DVL/DeltaT"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage02"
+        	android:layout_alignTop="@+id/btPage02"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage03"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage02"
+        android:layout_marginTop="0dp"
+        android:text="Sensor"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage03"
+        	android:layout_alignTop="@+id/btPage03"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage04"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage03"
+        android:layout_marginTop="0dp"
+        android:text="Payload"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage04"
+        	android:layout_alignTop="@+id/btPage04"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage05"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage04"
+        android:layout_marginTop="0dp"
+        android:text="Ballast"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage05"
+        	android:layout_alignTop="@+id/btPage05"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage06"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage05"
+        android:layout_marginTop="0dp"
+        android:text="Actuator"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage06"
+        	android:layout_alignTop="@+id/btPage06"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage07"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage06"
+        android:layout_marginTop="0dp"
+        android:text="PosUpdate"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage07"
+        	android:layout_alignTop="@+id/btPage07"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage08"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage07"
+        android:layout_marginTop="0dp"
+        android:text="CheckError"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage08"
+        	android:layout_alignTop="@+id/btPage08"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage09"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage08"
+        android:layout_marginTop="0dp"
+        android:text="Dive"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage09"
+        	android:layout_alignTop="@+id/btPage09"
+        	android:layout_marginLeft="200dp"
+        />
+    <Button
+        android:id="@+id/btPage10"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btPage09"
+        android:layout_marginTop="0dp"
+        android:text="Recovery"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        />
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/border"
+android:gravity="center"
+            android:text=""
+            android:id="@+id/tvPage10"
+        	android:layout_alignTop="@+id/btPage10"
+        	android:layout_marginLeft="200dp"
+        />
+
+<!-- Recieve Time -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="(Receive Time)"
+        android:id="@+id/tvUdpRecvMon"
+        android:layout_below="@+id/btPage10"
+        android:layout_marginTop="0dp"
+        />
+
+<!-- log -->
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="200dip"
+        android:text=""
+        android:id="@+id/tvUdpLog"
+        android:textSize="20sp"
+        android:background="#998c9fff"
+        android:layout_below="@+id/tvUdpRecvMon"
+        android:layout_marginTop="0dp"
+	 />
+
+
+
+
+</RelativeLayout>

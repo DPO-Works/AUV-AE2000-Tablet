@@ -1,0 +1,18 @@
+開発環境　AndroidStudio2023.2.1 Patch2
+
+app/build.gradle の
+versionCodeを＋１して
+versionName を変更すること。
+
+
+バージョン情報
+
+2025.12.04	Ver 3
+	・Ver 2.1をAndoroidStudio 2023.2.1 Patch2 に移植
+	・Setup：OS Reboot、OS_Shutodwn を追加
+	・Command：VNC起動 を削除
+	・Status,CheckError　以上ステータス表示詳細をトーストからダイアログに変更、ボタンの表示で上下が見切れる対策（上下余白スペースをゼロに）
+	・Quadrans：Roll,Pitch,Yawからアライメント状態を計算するロジック＆表示追加、GGA文字列追加
+	・CheckError：異常検知タスクステータスの表示追加
+	・Dive：ReturnTime表示を追加
+	・受信解析にReturnTimeを末尾に追加

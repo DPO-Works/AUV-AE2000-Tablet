@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="24.0sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".subact"
+    android:background="#ffd9dbff">
+    <!---
+    android:background="@drawable/top2" >
+    -->
+
+<!-- Actuator Test -->
+    <TextView
+        android:layout_width="940dip"
+        android:layout_height="30dip"
+        android:text="Actuator Test"
+        android:id="@+id/act_tvSettingTitle"
+        android:textSize="24dp"
+        android:background="#99fff957"
+        android:layout_marginLeft="0dp" />
+
+<!-- Act On / off  -->
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Actuator ON"
+        android:id="@+id/act_btActOn"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Actuator OFF"
+        android:id="@+id/act_btActOff"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="330dp"
+        />
+
+
+<!-- TH Right -->
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Thruster Right (+10%)"
+        android:id="@+id/act_btThR_P"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Thruster Right Stop"
+        android:id="@+id/act_btThR_Stop"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="330dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Thruster Right (-10%)"
+        android:id="@+id/act_btThR_N"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="640dp"
+        />
+
+<!-- TH Left -->
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Thruster Left (+10%)"
+        android:id="@+id/act_btThL_P"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Thruster Left Stop"
+        android:id="@+id/act_btThL_Stop"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="330dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Thruster Left (-10%)"
+        android:id="@+id/act_btThL_N"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="640dp"
+        />
+
+
+<!-- Thrust status -->
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thrust Power"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/act_tvThrustPwr"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="240dp"
+        />
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thrust Order L"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/act_tvThrustOrderL"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="240dp"
+        />
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thrust Order R"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/act_tvThrustOrderR"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="240dp"
+        />
+
+
+<!-- ELV Left -->
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Elevator (+20deg)"
+        android:id="@+id/act_btElL_P"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Elevator Stop"
+        android:id="@+id/act_btElL_Stop"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="330dp"
+        />
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Elevator (-20deg)"
+        android:id="@+id/act_btElL_N"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="640dp"
+        />
+
+<!-- Wing status -->
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wing Power"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/act_tvWingPwr"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="240dp"
+        />
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wing Order/FB"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/act_tvWingOrderL"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="240dp"
+        />
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/act_tvWingFbL"
+			android:background="@drawable/border"
+        android:layout_below="@+id/act_tvSettingTitle"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="340dp"
+        />
+
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="Ready Mark"
+        android:id="@+id/act_btActCheck"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+</RelativeLayout>
