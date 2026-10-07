@@ -16,3 +16,6 @@ versionName を変更すること。
 	・CheckError：異常検知タスクステータスの表示追加
 	・Dive：ReturnTime表示を追加
 	・受信解析にReturnTimeを末尾に追加
+2026.10.07  Ver 3.1
+    ・PC都合起因でCurMon復活のしわ寄せで、エラー関係のタスク関連表示が異常だったのを修正した。
+

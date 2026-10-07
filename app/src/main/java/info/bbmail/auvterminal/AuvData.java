@@ -40,56 +40,60 @@ public class AuvData
     public String ErrTask03 = "■CurMon task";
     public String ErrStr03 = "Error CurrentMonitor task";
     public String ErrorID_03 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
+	// TASK_ID_GPS,,,,,,,,,,,,,,,
+	public String ErrTask04 = "GPS task";
+	public String ErrStr04 = "Error CurrentMonitor task";
+	public String ErrorID_04 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,－,Task Stop";
     // TASK_ID_IO,,,,,,,,,,,,,,,
-    public String ErrTask04 = "IO task";
-    public String ErrStr04 = "Error IO task";
-    public String ErrorID_04 = "Thruster Power,Elevator Power,Elevator Angle,Elevator Angle Diff,Control Vessel Temp,Battery1 Voltage,Battery2 Voltage,Battery1 Current,Battery2 Current,SSS Water leakage,DataTransVessel Water leakage,Control Vessel Water leakage,Battery1 Water leakage,Battery2 Water leakage,－,Task Stop";
+    public String ErrTask05 = "IO task";
+    public String ErrStr05 = "Error IO task";
+    public String ErrorID_05 = "Thruster Power,Elevator Power,Elevator Angle,Elevator Angle Diff,Control Vessel Temp,Battery1 Voltage,Battery2 Voltage,Battery1 Current,Battery2 Current,SSS Water leakage,DataTransVessel Water leakage,Control Vessel Water leakage,Battery1 Water leakage,Battery2 Water leakage,－,Task Stop";
 
     // TASK_ID_DELTAT,
-    public String ErrTask05 = "Prof.Sonar task";
-    public String ErrStr05 = "Error Prof.Sonar task";
-    public String ErrorID_05 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
-    // THREAD_ID_MAG,,,,,,,,,,,,,,,
-    public String ErrTask06 = "■Mag task";
-    public String ErrStr06 = "Error Mag task";
+    public String ErrTask06 = "Prof.Sonar task";
+    public String ErrStr06 = "Error Prof.Sonar task";
     public String ErrorID_06 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
+    // THREAD_ID_MAG,,,,,,,,,,,,,,,
+    public String ErrTask07 = "■Mag task";
+    public String ErrStr07 = "Error Mag task";
+    public String ErrorID_07 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
     // TASK_ID_ACOSTIC
-    public String ErrTask07 = "MODEM task";
-    public String ErrStr07 = "Error MODEM";
-    public String ErrorID_07 = "－,－,－,－,－,－,－,－,－,－,－,－,－,Power On Fault,－,Task Stop";
+    public String ErrTask08 = "MODEM task";
+    public String ErrStr08 = "Error MODEM";
+    public String ErrorID_08 = "－,－,－,－,－,－,－,－,－,－,－,－,－,Power On Fault,－,Task Stop";
     // TASK_ID_POS,,,,,,,,,,,,,,,
-    public String ErrTask08 = "Position task";
-    public String ErrStr08 = "Error Position task";
-    public String ErrorID_08 =  "Lat,Lon,VX,VY,VZ,ROLL,PITCH,rrate,prate,yrate,depth,Dist0deg,DistFwd,Height,－,Task Stop";
+    public String ErrTask09 = "Position task";
+    public String ErrStr09 = "Error Position task";
+    public String ErrorID_09 =  "Lat,Lon,VX,VY,VZ,ROLL,PITCH,rrate,prate,yrate,depth,Dist0deg,DistFwd,Height,－,Task Stop";
     // TASK_ID_UDP,,,,,,,,,,,,,,,
-    public String ErrTask09 = "UDP task";
-    public String ErrStr09 = "Error UDP task";
-    public String ErrorID_09 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
+    public String ErrTask10 = "UDP task";
+    public String ErrStr10 = "Error UDP task";
+    public String ErrorID_10 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
 	// TASK_ID_ABNORMAL
-    public String ErrTask10 = "Error task";
-    public String ErrStr10 = "Error task";
-    public String ErrorID_10 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,－,－";
+    public String ErrTask11 = "Error task";
+    public String ErrStr11 = "Error task";
+    public String ErrorID_11 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,－,－";
     // TASK_ID_PAYLOAD,,,,,,,,,,,,,,,
-    public String ErrTask11 = "PAYLOAD task";
-    public String ErrStr11 = "Error PAYLOAD task";
-    public String ErrorID_11 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
+    public String ErrTask12 = "PAYLOAD task";
+    public String ErrStr12 = "Error PAYLOAD task";
+    public String ErrorID_12 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
     // TASK_ID_NEWFLY,,,,,,,,,,,,,,,
-    public String ErrTask12 = "NewFly task";
-    public String ErrStr12 = "Error NewFly task";
-    public String ErrorID_12 ="Gain File Read Failure,Mission Course File Read Failure,Return Course File Read Failure,SafetyDepthMap File Read Failure,Course TimeOut,Pitch control Abnormal,Tide Speed is Abnormal,Return Start,WayPoint Approaching Abnormal,No NewFly Controll Dive,NewFly Start Reservation Timeout,－,－,－,－,Task Stop";
+    public String ErrTask13 = "NewFly task";
+    public String ErrStr13 = "Error NewFly task";
+    public String ErrorID_13 ="Gain File Read Failure,Mission Course File Read Failure,Return Course File Read Failure,SafetyDepthMap File Read Failure,Course TimeOut,Pitch control Abnormal,Tide Speed is Abnormal,Return Start,WayPoint Approaching Abnormal,No NewFly Controll Dive,NewFly Start Reservation Timeout,－,－,－,－,Task Stop";
 
     // THREAD_ID_SAILMANAGE,,,,,,,,,,,,,,,
-    public String ErrTask13 = "■SailManage task";
-    public String ErrStr13 = "Error SailManage task";
-    public String ErrorID_13 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,－,－";
+    public String ErrTask14 = "■SailManage task";
+    public String ErrStr14 = "Error SailManage task";
+    public String ErrorID_14 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,－,－";
     // TASK_ID_DEPTH
-    public String ErrTask14 = "Depth task";
-    public String ErrStr14 = "Error Depth task";
-    public String ErrorID_14 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
+    public String ErrTask15 = "Depth task";
+    public String ErrStr15 = "Error Depth task";
+    public String ErrorID_15 = "－,－,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
     // TASK_ID_QUADRANCE,,,,,,,,,,,,,,,
-    public String ErrTask15 = "Quadrans task";
-    public String ErrStr15 = "Error Quadrans task";
-    public String ErrorID_15 = "NoAlignment,UpdeateStop,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
+    public String ErrTask16 = "Quadrans task";
+    public String ErrStr16 = "Error Quadrans task";
+    public String ErrorID_16 = "NoAlignment,UpdeateStop,－,－,－,－,－,－,－,－,－,－,－,－,TransductionTimeout,Task Stop";
 
     public AuvData()
     {
@@ -166,6 +170,8 @@ public class AuvData
         Error.taskdat[ Error.TASK_ID_DVL        ].ErrCode    = "0x0000";
         Error.taskdat[ Error.TASK_ID_CURMON     ].TaskStatus = "1";
         Error.taskdat[ Error.TASK_ID_CURMON     ].ErrCode    = "0x0000";
+		Error.taskdat[ Error.TASK_ID_GPS        ].TaskStatus = "1";
+		Error.taskdat[ Error.TASK_ID_GPS        ].ErrCode    = "0x0000";
         Error.taskdat[ Error.TASK_ID_IO         ].TaskStatus = "1";
         Error.taskdat[ Error.TASK_ID_IO         ].ErrCode    = "0x0000";
         Error.taskdat[ Error.TASK_ID_DELTAT     ].TaskStatus = "1";
@@ -281,8 +287,10 @@ public class AuvData
 			Error.taskdat[ Error.TASK_ID_MAIN       ].ErrCode    = data[54];
 			Error.taskdat[ Error.TASK_ID_DVL        ].TaskStatus = data[55];
 			Error.taskdat[ Error.TASK_ID_DVL        ].ErrCode    = data[56];
-			Error.taskdat[ Error.TASK_ID_CURMON     ].TaskStatus = data[57];
-			Error.taskdat[ Error.TASK_ID_CURMON     ].ErrCode    = data[58];
+			Error.taskdat[ Error.TASK_ID_CURMON     ].TaskStatus = "0";
+			Error.taskdat[ Error.TASK_ID_CURMON     ].ErrCode    = "0x0000";
+			Error.taskdat[ Error.TASK_ID_GPS        ].TaskStatus = data[57];
+			Error.taskdat[ Error.TASK_ID_GPS        ].ErrCode    = data[58];
 			Error.taskdat[ Error.TASK_ID_IO         ].TaskStatus = data[59];
 			Error.taskdat[ Error.TASK_ID_IO         ].ErrCode    = data[60];
 			Error.taskdat[ Error.TASK_ID_DELTAT     ].TaskStatus = data[61];
@@ -625,23 +633,24 @@ class AuvError
 	public static final int TASK_ID_MAIN		= 0;			// 0  メインタスク
 	public static final int TASK_ID_DVL			= 1;			// 1  ドップラソナータスク
 	public static final int TASK_ID_CURMON		= 2;			// 2  電流確認基板タスク (Linux化で未使用）
-	public static final int TASK_ID_IO			= 3;			// 3  IOタスク
-	public static final int TASK_ID_DELTAT		= 4;			// 4  DeltaTタスク
-	public static final int TASK_ID_MAG			= 5;			// 5  磁力計タスク
-	public static final int TASK_ID_ACOSTIC		= 6;			// 6  データ伝送装置タスク(新）
-	public static final int TASK_ID_POS			= 7;			// 7  位置推測タスク
-	public static final int TASK_ID_UDP			= 8;			// 8  UDP上位通信タスク
-	public static final int TASK_ID_ABNORMAL	= 9;			// 9  異常検知、異常処理
-	public static final int TASK_ID_PAYLOAD		= 10;			// 10 PAYLOAD GeoSworth/SeaXerocks
-	public static final int TASK_ID_NEWFLY		= 11;			// 11 NewFly
-	public static final int TASK_ID_SAILMANAGE	= 12;			// 12 航行管理タスク (Linux化で未使用）
-	public static final int TASK_ID_DEPTH		= 13;			// 13 深度計タスク
-	public static final int TASK_ID_QUADRANS	= 14;			// 14 QUADRANS
-	public static final int TASK_ID_SIM			= 15;			// 15 シミュレーション
-	public static final int TASK_ID_DIGICAM		= 16;			// 16 デジタルカメラタスク (Linux化で未使用）
-	public static final int TASK_ID_CYCLIC		= 17;			// 17 周期ハンドラタスク
-	public static final int TASK_ID_CYCLIC_WAKE	= 18;			// 18 周期ハンドラタスク（定期起床タスク）
-	public static final int TASK_ID_MAX			= 19;			//    ID最大
+	public static final int TASK_ID_GPS		    = 3;			// 3  GPS
+	public static final int TASK_ID_IO			= 4;			// 4  IOタスク
+	public static final int TASK_ID_DELTAT		= 5;			// 5  DeltaTタスク
+	public static final int TASK_ID_MAG			= 6;			// 6  磁力計タスク
+	public static final int TASK_ID_ACOSTIC		= 7;			// 7  データ伝送装置タスク(新）
+	public static final int TASK_ID_POS			= 8;			// 8  位置推測タスク
+	public static final int TASK_ID_UDP			= 9;			// 9  UDP上位通信タスク
+	public static final int TASK_ID_ABNORMAL	= 10;			// 10  異常検知、異常処理
+	public static final int TASK_ID_PAYLOAD		= 11;			// 11 PAYLOAD GeoSworth/SeaXerocks
+	public static final int TASK_ID_NEWFLY		= 12;			// 12 NewFly
+	public static final int TASK_ID_SAILMANAGE	= 13;			// 13 航行管理タスク (Linux化で未使用）
+	public static final int TASK_ID_DEPTH		= 14;			// 14 深度計タスク
+	public static final int TASK_ID_QUADRANS	= 15;			// 15 QUADRANS
+	public static final int TASK_ID_SIM			= 16;			// 16 シミュレーション
+	public static final int TASK_ID_DIGICAM		= 17;			// 17 デジタルカメラタスク (Linux化で未使用）
+	public static final int TASK_ID_CYCLIC		= 18;			// 18 周期ハンドラタスク
+	public static final int TASK_ID_CYCLIC_WAKE	= 19;			// 19 周期ハンドラタスク（定期起床タスク）
+	public static final int TASK_ID_MAX			= 20;			//    ID最大
 
 	public AuvError()
 	{

@@ -61,6 +61,7 @@ public class FragmentError extends Fragment implements OnClickListener {
         ((Button) getActivity().findViewById(R.id.err_btErr_17)).setOnClickListener(this);
         ((Button) getActivity().findViewById(R.id.err_btErr_18)).setOnClickListener(this);
         ((Button) getActivity().findViewById(R.id.err_btErr_19)).setOnClickListener(this);
+        ((Button) getActivity().findViewById(R.id.err_btErr_20)).setOnClickListener(this);
 
         // タスク名のセット
         ma.cc.SetStringToTextView( ma.ViecleData.ErrTask01, R.id.err_tvErr_05t);
@@ -78,6 +79,7 @@ public class FragmentError extends Fragment implements OnClickListener {
         ma.cc.SetStringToTextView( ma.ViecleData.ErrTask13, R.id.err_tvErr_17t);
         ma.cc.SetStringToTextView( ma.ViecleData.ErrTask14, R.id.err_tvErr_18t);
         ma.cc.SetStringToTextView( ma.ViecleData.ErrTask15, R.id.err_tvErr_19t);
+        ma.cc.SetStringToTextView( ma.ViecleData.ErrTask16, R.id.err_tvErr_20t);
    }
 
 
@@ -111,6 +113,7 @@ public class FragmentError extends Fragment implements OnClickListener {
         if(v.getId() ==  R.id.err_btErr_17)	showDialog( ma.cc.getErrorDetail(  ma.ViecleData.ErrStr13, ma.ViecleData.ErrorID_13, ErrorCode ));
         if(v.getId() ==  R.id.err_btErr_18)	showDialog( ma.cc.getErrorDetail(  ma.ViecleData.ErrStr14, ma.ViecleData.ErrorID_14, ErrorCode ));
         if(v.getId() ==  R.id.err_btErr_19)	showDialog( ma.cc.getErrorDetail(  ma.ViecleData.ErrStr15, ma.ViecleData.ErrorID_15, ErrorCode ));
+        if(v.getId() ==  R.id.err_btErr_20)	showDialog( ma.cc.getErrorDetail(  ma.ViecleData.ErrStr16, ma.ViecleData.ErrorID_16, ErrorCode ));
 
         if(v.getId() == R.id.err_btErrorCheckStart) {
             ma.UdpSend( "ERRSTART");
@@ -165,6 +168,7 @@ public class FragmentError extends Fragment implements OnClickListener {
             case 13:errOut = ma.cc.getErrorDetail( ma.ViecleData.ErrStr13, ma.ViecleData.ErrorID_13, ErrorCode );break;
             case 14:errOut = ma.cc.getErrorDetail( ma.ViecleData.ErrStr14, ma.ViecleData.ErrorID_14, ErrorCode );break;
             case 15:errOut = ma.cc.getErrorDetail( ma.ViecleData.ErrStr15, ma.ViecleData.ErrorID_15, ErrorCode );break;
+            case 16:errOut = ma.cc.getErrorDetail( ma.ViecleData.ErrStr16, ma.ViecleData.ErrorID_16, ErrorCode );break;
         }
         if (errOut != null && !errOut.isEmpty())
             showDialog( errOut );
@@ -184,38 +188,38 @@ public class FragmentError extends Fragment implements OnClickListener {
             ma.cc.SetStringToTextView( ma.cc.SerialSec2Time(ma.ViecleData.Error.ErrTime), R.id.err_tvErr_04);
             ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ABNORMAL].TaskStatus, R.id.err_tvAbnormalTaskStatus);
 
-
             ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_MAIN       ].TaskStatus, R.id.err_tvErr_05A);
             ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_MAIN       ].ErrCode, R.id.err_btErr_05);
             ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DVL      ].TaskStatus, R.id.err_tvErr_06A);
             ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DVL      ].ErrCode, R.id.err_btErr_06);
             ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_CURMON   ].TaskStatus, R.id.err_tvErr_07A);
             ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_CURMON   ].ErrCode, R.id.err_btErr_07);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_IO      ].TaskStatus, R.id.err_tvErr_08A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_IO      ].ErrCode, R.id.err_btErr_08);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DELTAT ].TaskStatus, R.id.err_tvErr_09A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DELTAT ].ErrCode, R.id.err_btErr_09);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_MAG      ].TaskStatus, R.id.err_tvErr_10A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_MAG      ].ErrCode, R.id.err_btErr_10);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ACOSTIC    ].TaskStatus, R.id.err_tvErr_11A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ACOSTIC    ].ErrCode, R.id.err_btErr_11);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_POS   ].TaskStatus, R.id.err_tvErr_12A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_POS   ].ErrCode, R.id.err_btErr_12);
-
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_UDP      ].TaskStatus, R.id.err_tvErr_13A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_UDP      ].ErrCode, R.id.err_btErr_13);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ABNORMAL  ].TaskStatus, R.id.err_tvErr_14A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ABNORMAL  ].ErrCode, R.id.err_btErr_14);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_PAYLOAD      ].TaskStatus, R.id.err_tvErr_15A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_PAYLOAD      ].ErrCode, R.id.err_btErr_15);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_NEWFLY ].TaskStatus, R.id.err_tvErr_16A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_NEWFLY ].ErrCode, R.id.err_btErr_16);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_SAILMANAGE ].TaskStatus, R.id.err_tvErr_17A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_SAILMANAGE ].ErrCode, R.id.err_btErr_17);
-            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DEPTH ].TaskStatus, R.id.err_tvErr_18A);
-            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DEPTH ].ErrCode, R.id.err_btErr_18);
-        ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_QUADRANS ].TaskStatus, R.id.err_tvErr_19A);
-        ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_QUADRANS ].ErrCode, R.id.err_btErr_19);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_GPS   ].TaskStatus, R.id.err_tvErr_08A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_GPS   ].ErrCode, R.id.err_btErr_08);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_IO      ].TaskStatus, R.id.err_tvErr_09A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_IO      ].ErrCode, R.id.err_btErr_09);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DELTAT ].TaskStatus, R.id.err_tvErr_10A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DELTAT ].ErrCode, R.id.err_btErr_10);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_MAG      ].TaskStatus, R.id.err_tvErr_11A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_MAG      ].ErrCode, R.id.err_btErr_11);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ACOSTIC    ].TaskStatus, R.id.err_tvErr_12A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ACOSTIC    ].ErrCode, R.id.err_btErr_12);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_POS   ].TaskStatus, R.id.err_tvErr_13A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_POS   ].ErrCode, R.id.err_btErr_13);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_UDP      ].TaskStatus, R.id.err_tvErr_14A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_UDP      ].ErrCode, R.id.err_btErr_14);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ABNORMAL  ].TaskStatus, R.id.err_tvErr_15A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_ABNORMAL  ].ErrCode, R.id.err_btErr_15);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_PAYLOAD      ].TaskStatus, R.id.err_tvErr_16A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_PAYLOAD      ].ErrCode, R.id.err_btErr_16);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_NEWFLY ].TaskStatus, R.id.err_tvErr_17A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_NEWFLY ].ErrCode, R.id.err_btErr_17);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_SAILMANAGE ].TaskStatus, R.id.err_tvErr_18A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_SAILMANAGE ].ErrCode, R.id.err_btErr_18);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DEPTH ].TaskStatus, R.id.err_tvErr_19A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_DEPTH ].ErrCode, R.id.err_btErr_19);
+            ma.cc.SetStringToTextViewStatus(ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_QUADRANS ].TaskStatus, R.id.err_tvErr_20A);
+            ma.cc.SetStringToButton(        ma.ViecleData.Error.taskdat[ ma.ViecleData.Error.TASK_ID_QUADRANS ].ErrCode, R.id.err_btErr_20);
 
 	}
 

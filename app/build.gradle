@@ -10,8 +10,8 @@ android {
         applicationId "info.bbmail.auvterminal"
         minSdk 28
         targetSdk 34
-        versionCode 3
-        versionName "3.0_GNSS_AE2000"
+        versionCode 4
+        versionName "3.1_GNSS_AE2000"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
